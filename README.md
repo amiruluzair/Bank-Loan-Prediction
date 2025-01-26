@@ -21,3 +21,25 @@ Modeling Approach: Machine learning classifiers such as Logistic Regression, Ran
 Performance Metrics: Accuracy, precision, recall, F1-score, and AUC-ROC are used to assess the model’s ability to differentiate between potential borrowers and non-borrowers.
 By achieving these objectives, the project will not only support Thera-Bank’s business goals but also serve as a case study in the application of machine learning for targeted marketing in the banking industry.
 
+## Performance Evaluation
+Top Performers:
+
+Decision Tree and XGBoost achieved the highest accuracy of 98.4%. Both models showed strong balance between precision, recall, and F1-score for identifying customers likely to take a loan.
+XGBoost performed slightly better in classifying minority class (loan buyers), achieving a higher F1-score (0.94) and macro-average metrics.
+Logistic Regression:
+
+While relatively simple, Logistic Regression achieved good overall accuracy (94.8%) but struggled slightly in precision for the minority class (loan buyers).
+KNN, GBM, and MLP:
+
+These models performed comparably well with accuracies around 98%, showing strong recall and F1-scores for the minority class.
+Naive Bayes:
+
+This model had the lowest recall for the minority class (0.38) despite achieving high precision (1.00) for it, indicating significant difficulty in identifying actual loan buyers.
+Support Vector Machine (SVM):
+
+SVM achieved an accuracy of 97.6% and maintained a good balance in performance for both classes, though slightly lower precision compared to other models.
+
+## Conclusion
+XGBoost and Decision Tree emerge as the most effective models for this dataset, with superior accuracy, precision, recall, and F1-scores for identifying potential loan customers.
+Naive Bayes is not recommended for this problem due to its low recall for the minority class.
+For practical implementation, XGBoost is preferred due to its robust performance and ability to handle class imbalances effectively.
